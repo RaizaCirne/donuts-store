@@ -1,4 +1,5 @@
 import Logo from "../../assets/img/Logo.svg";
+import "../Navbar/Navbar.css";
 import { BsCart2 } from "react-icons/bs";
 
 const Navbar = () => {
@@ -17,6 +18,8 @@ const Navbar = () => {
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a>
+
+        <button className="primary-button">Reservar Agora</button>
       </div>
     </nav>
   );
