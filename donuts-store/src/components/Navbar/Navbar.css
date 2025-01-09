@@ -37,6 +37,20 @@ nav {
   background-color: #5dcefb;
 }
 
-/* .nav-bar-menu-container {
+.nav-bar-menu-container {
   display: none;
-} */
+}
+
+@media (max-width: 800px) {
+  .nav-logo-container {
+    max-width: 100px;
+  }
+
+  .nav-bar-links-container {
+    display: none;
+  }
+
+  .nav-bar-menu-container {
+    display: flex;
+  }
+}
