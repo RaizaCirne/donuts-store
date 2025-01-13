@@ -46,6 +46,20 @@ nav {
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .nav-logo-container {
+    max-width: 100px;
+  }
+
+  .nav-bar-links-container {
+    display: none;
+  }
+
+  .nav-bar-menu-container {
+    display: flex;
+  }
+}
+
 @media (max-width: 800px) {
   .nav-logo-container {
     max-width: 100px;
