@@ -22,3 +22,9 @@ body {
   /* overflow: hidden; */
   background-color: #fff;
 }
+
+@media (max-width: 800px) {
+  .App {
+    min-height: 490vh;
+  }
+}

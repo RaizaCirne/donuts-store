@@ -12,6 +12,7 @@
 
 .work-section-top h1 {
   max-width: 700px !important;
+  color: #4c4c4c;
 }
 
 .work-section-bottom {
@@ -51,4 +52,14 @@
 .info-boxes-img-container {
   font-size: 100px;
   color: pink;
+}
+
+@media (max-width: 800px) {
+  .work-section-wrapper {
+    margin-top: 3rem !important;
+  }
+
+  .work-section-bottom {
+    margin-top: 1rem !important;
+  }
 }
