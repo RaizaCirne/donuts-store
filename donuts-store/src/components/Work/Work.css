@@ -1,5 +1,9 @@
 .work-section-wrapper {
   margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .work-section-top {
@@ -26,7 +30,7 @@
 .work-section-info {
   width: 290px;
   min-height: 350px;
-  background-color: #fff;
+  background-color: #f1e3e3;
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;

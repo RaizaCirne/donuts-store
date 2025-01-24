@@ -4,7 +4,7 @@ import { AiFillStar } from "react-icons/ai";
 
 const Testemonial = () => {
   return (
-    <div className="work-section-weapper">
+    <div className="work-section-wrapper">
       <div className="work-section-top">
         <p className="primary-subheading">Avaliação</p>
         <h1 className="primary-heading">O que dizem sobre nós</h1>
@@ -24,16 +24,15 @@ const Testemonial = () => {
           Recomendo para todos que querem uma experiência deliciosa e
           memorável."
         </p>
+        <div className="testemonioals-stars-container">
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+          <AiFillStar />
+        </div>
+        <h2>João Ninguém</h2>
       </div>
-
-      <div className="testemonioals-stars-container">
-        <AiFillStar />
-        <AiFillStar />
-        <AiFillStar />
-        <AiFillStar />
-        <AiFillStar />
-      </div>
-      <h2>João Ninguém</h2>
     </div>
   );
 };
