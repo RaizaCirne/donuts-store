@@ -25,6 +25,7 @@ body {
 
 @media (max-width: 800px) {
   .App {
-    min-height: 490vh;
+    min-height: 750vh;
+    max-width: 95vw;
   }
 }

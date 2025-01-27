@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Testemonial from "./components/Testemonial/Testemonial";
 import Work from "./components/Work/Work";
@@ -13,6 +14,7 @@ function App() {
       <Work />
       <Testemonial />
       <Contact />
+      <Footer />
     </div>
   );
 }
