@@ -30,48 +30,24 @@
   margin-left: 200px;
 }
 
-.primary-subheading {
+/* .primary-subheading {
   font-weight: 700;
   color: rgb(253, 127, 148);
   font-size: 3rem;
-}
+} */
 
 /* Classes Home.css */
-.primary-heading {
+/* .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   color: #4c4c4c;
   max-width: 600px;
-}
+} */
 
-.primary-text {
+/* .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   color: #6a6a6a;
   margin: 1.5rem 0rem;
-}
-
-.secondary-button {
-  padding: 1rem 2.5rem;
-  background-color: #5dcefb;
-  outline: none;
-  border: none;
-  border-radius: 5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.secondary-button:hover {
-  background-color: #81d5f7;
-}
-
-.secondary-button svg {
-  margin-left: 0.75rem;
-  font-size: 1.5rem;
-}
+} */
 
 /* Classes About.css  */
 .about-buttons-container {
@@ -139,20 +115,20 @@
     flex-direction: column;
   }
 
-  .primary-subheading {
+  /* .primary-subheading {
     text-align: center;
-  }
+  } */
 
-  .primary-text {
+  /* .primary-text {
     text-align: center;
     max-width: 80%;
-  }
+  } */
 
-  .secondary-button {
+  /* .secondary-button {
     font-size: 1rem;
     padding: 0.8rem 2rem;
     cursor: pointer;
-  }
+  } */
 
   .watch-video-button {
     margin-left: 0rem !important;
