@@ -42,7 +42,7 @@ const Navbar = () => {
       icon: <PhoneRoundedIcon />,
     },
     {
-      text: "Cart",
+      text: "Carrinho",
       icon: <ShoppingCartRoundedIcon />,
     },
   ];
@@ -80,7 +80,7 @@ const Navbar = () => {
         >
           <List>
             {menuOptions.map((item) => (
-              <ListItem Key={item.text} disablePadding>
+              <ListItem key={item.text} disablePadding>
                 <ListItemButton>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
