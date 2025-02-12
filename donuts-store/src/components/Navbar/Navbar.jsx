@@ -18,33 +18,24 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
-const Navbar = () => {
+const Navbar = ({ homeRef, aboutRef, workRef, testemonialRef, contactRef }) => {
   const [openMenu, setOpenMenu] = useState(false);
+
+  // Função para rolar suavemente até a seção desejada
+  const scrollToSection = (ref) => {
+    window.scrollTo({
+      top: ref.current.offsetTop,
+      behavior: "smooth", // Esse "smooth" faz o scroll ser suave, não abrupto
+    });
+  };
+
   const menuOptions = [
-    {
-      text: "Home",
-      icon: <HomeIcon />,
-    },
-    {
-      text: "Sobre Nós",
-      icon: <InfoIcon />,
-    },
-    {
-      text: "Nosso Trabalho",
-      icon: <HomeWorkIcon />,
-    },
-    {
-      text: "Avaliação",
-      icon: <CommentRoundedIcon />,
-    },
-    {
-      text: "Contato",
-      icon: <PhoneRoundedIcon />,
-    },
-    {
-      text: "Carrinho",
-      icon: <ShoppingCartRoundedIcon />,
-    },
+    { text: "Home", icon: <HomeIcon />, ref: homeRef },
+    { text: "Sobre Nós", icon: <InfoIcon />, ref: aboutRef },
+    { text: "Nosso Trabalho", icon: <HomeWorkIcon />, ref: workRef },
+    { text: "Avaliação", icon: <CommentRoundedIcon />, ref: testemonialRef },
+    { text: "Contato", icon: <PhoneRoundedIcon />, ref: contactRef },
+    { text: "Carrinho", icon: <ShoppingCartRoundedIcon />, ref: null },
   ];
 
   return (
@@ -54,11 +45,11 @@ const Navbar = () => {
       </div>
 
       <div className="nav-bar-links-container">
-        <a href="">Home</a>
-        <a href="">Sobre Nós</a>
-        <a href="">Nosso Trabalho</a>
-        <a href="">Avaliação</a>
-        <a href="">Contato</a>
+        <a onClick={() => scrollToSection(homeRef)}>Home</a>
+        <a onClick={() => scrollToSection(aboutRef)}>Sobre Nós</a>
+        <a onClick={() => scrollToSection(workRef)}>Nosso Trabalho</a>
+        <a onClick={() => scrollToSection(testemonialRef)}>Avaliação</a>
+        <a onClick={() => scrollToSection(contactRef)}>Contato</a>
         <a href="">
           <BsCart2 className="navbar-cart-icon" />
         </a>
@@ -80,7 +71,11 @@ const Navbar = () => {
         >
           <List>
             {menuOptions.map((item) => (
-              <ListItem key={item.text} disablePadding>
+              <ListItem
+                key={item.text}
+                disablePadding
+                onClick={() => item.ref && scrollToSection(item.ref)}
+              >
                 <ListItemButton>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
