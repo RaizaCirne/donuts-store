@@ -14,12 +14,12 @@
 }
 
 .about-section-image-container {
-  flex: 0.9;
+  flex: 1.3;
 }
 
 .about-section-image-container img {
-  margin-left: 270px;
-  margin-bottom: 85px;
+  margin-left: 220px;
+  margin-bottom: 95px;
 }
 
 .about-section-text-container {
@@ -27,29 +27,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 200px;
+  margin-left: 60px;
 }
 
-/* .primary-subheading {
-  font-weight: 700;
-  color: rgb(253, 127, 148);
-  font-size: 3rem;
-} */
-
-/* Classes Home.css */
-/* .primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
-  max-width: 600px;
-} */
-
-/* .primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
-  color: #6a6a6a;
-  margin: 1.5rem 0rem;
-} */
-
-/* Classes About.css  */
 .about-buttons-container {
   margin-top: 2rem;
   display: flex;
@@ -114,21 +94,6 @@
     justify-content: center;
     flex-direction: column;
   }
-
-  /* .primary-subheading {
-    text-align: center;
-  } */
-
-  /* .primary-text {
-    text-align: center;
-    max-width: 80%;
-  } */
-
-  /* .secondary-button {
-    font-size: 1rem;
-    padding: 0.8rem 2rem;
-    cursor: pointer;
-  } */
 
   .watch-video-button {
     margin-left: 0rem !important;

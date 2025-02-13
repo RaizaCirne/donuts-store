@@ -9,7 +9,6 @@ import Testemonial from "./components/Testemonial/Testemonial";
 import Work from "./components/Work/Work";
 
 function App() {
-  // Criando referências para as seções
   const homeRef = useRef(null);
   const aboutRef = useRef(null);
   const workRef = useRef(null);
@@ -18,37 +17,29 @@ function App() {
 
   return (
     <div className="App">
-      {/* Passando as referências para o Navbar */}
       <Navbar
-        homeRef={homeRef} 
+        homeRef={homeRef}
         aboutRef={aboutRef}
         workRef={workRef}
         testemonialRef={testemonialRef}
         contactRef={contactRef}
       />
 
-      {/* Adicionando as referências às seções */}
-
       <div ref={homeRef}>
         <Home />
       </div>
-
       <div ref={aboutRef}>
         <About />
       </div>
-
       <div ref={workRef}>
         <Work />
       </div>
-
       <div ref={testemonialRef}>
         <Testemonial />
       </div>
-
       <div ref={contactRef}>
         <Contact />
       </div>
-
       <Footer />
     </div>
   );
