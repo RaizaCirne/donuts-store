@@ -11,7 +11,6 @@ import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Drawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
-// import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -21,11 +20,10 @@ import ListItemText from "@mui/material/ListItemText";
 const Navbar = ({ homeRef, aboutRef, workRef, testemonialRef, contactRef }) => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  // Função para rolar suavemente até a seção desejada
   const scrollToSection = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
-      behavior: "smooth", // Esse "smooth" faz o scroll ser suave, não abrupto
+      behavior: "smooth", 
     });
   };
 
@@ -57,7 +55,6 @@ const Navbar = ({ homeRef, aboutRef, workRef, testemonialRef, contactRef }) => {
         <button className="primary-button">Reservar Agora</button>
       </div>
 
-      {/* mobile */}
       <div className="nav-bar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>
